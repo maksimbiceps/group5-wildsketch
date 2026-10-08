@@ -78,7 +78,7 @@ img {
 }
 
 .section-title {
-  font-family: var(--second-family);
+  font-family: var(--font-heading);
   font-weight: 700;
   font-size: 40px;
   line-height: 120%;
