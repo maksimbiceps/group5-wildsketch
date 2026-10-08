@@ -26,22 +26,16 @@
   gap: 24px;
 }
 .team__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
   width: 100%;
   min-height: 233px;
   text-align: center;
 }
 .team__photo {
+  margin: 0 auto 24px;
   width: 152px;
   height: 152px;
   border-radius: 50%;
   object-fit: cover;
-}
-.team__details {
-  width: 100%;
 }
 .team__name {
   font-size: 20px;
@@ -58,7 +52,6 @@
   }
   .team__item {
     width: calc((100% - 32px) / 2);
-    min-height: 233px;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -70,7 +63,5 @@
   }
   .team__item {
     width: calc((100% - 160px) / 6);
-    height: 233px;
-    min-height: 0;
   }
 }
