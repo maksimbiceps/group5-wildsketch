@@ -1,8 +1,6 @@
 .team {
   margin: 0;
   padding: 64px 0;
-  color: var(--color-text);
-  background-color: var(--color-bg);
 }
 .team__heading {
   margin: 0 auto 40px;
