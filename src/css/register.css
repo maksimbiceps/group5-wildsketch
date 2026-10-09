@@ -1,0 +1,220 @@
+.register-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 335px;
+  margin: 0 auto;
+  gap: 32px;
+}
+
+.register-content {
+  width: 100%;
+  max-width: 335px;
+}
+
+/* Заголовок секції */
+.register-title {
+  font-family: 'Caveat', cursive, sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.01em;
+  color: var(--color-scheme-1-text, #000000);
+  margin: 0 0 24px;
+}
+
+/* Форма */
+.register-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.field-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Назви полів */
+.form-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+}
+
+/* Інпути та текстове поле */
+.form-input,
+.form-textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px 12px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 1.4;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.05);
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.form-input {
+  height: 40px;
+}
+
+.form-textarea {
+  height: 180px;
+  padding: 12px;
+  resize: none;
+}
+
+/* Плейсхолдери */
+.form-input::placeholder,
+.form-textarea::placeholder {
+  border-color: var(--color-carissma, #000000);
+}
+
+/* фокус */
+.form-input:focus,
+.form-textarea:focus {
+  border-color: var(--color-carissma, #000000);
+}
+
+/* Кнопка Register */
+.register-btn {
+  width: 100%;
+  max-width: 340px;
+  height: 44px;
+  padding: 10px 24px;
+  border-radius: 100px;
+  background-color: var(--color-carissma, #e87a5d);
+  border: 1px solid var(--color-carissma, #e87a5d);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+  transition:
+    opacity 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.register-btn:hover,
+.register-btn:focus {
+  opacity: 0.88;
+}
+
+/* Картинка */
+.register-thumb {
+  width: 100%;
+  max-width: 335px;
+  height: 286px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.register-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .register-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 704px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 48px;
+  }
+
+  .register-content {
+    width: 100%;
+    max-width: 704px;
+  }
+
+  .register-thumb {
+    width: 100%;
+    max-width: 704px;
+    height: 362px;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  .register-btn {
+    width: 340px;
+  }
+
+  .register-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .register-section {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  .register-container {
+    max-width: 1312px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  .register-content {
+    width: 640px;
+    max-width: 640px;
+    flex-shrink: 0;
+  }
+
+  .register-thumb {
+    width: 640px;
+    max-width: 640px;
+    height: 734px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    overflow: hidden;
+    line-height: 0;
+  }
+
+  .register-btn {
+    width: 304px;
+  }
+
+  .register-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 25%;
+    display: block;
+  }
+}
