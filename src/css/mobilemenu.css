@@ -1,0 +1,77 @@
+
+.mobile-menu {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background-color: var(--color-bg);
+  padding: 24px 20px;
+  display: flex;
+flex-direction: column;
+  overflow-y: auto;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* Верхняя часть меню: Register и крестик */
+.mobile-menu__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile-menu__close {
+  display: block;
+ border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.mobile-menu__list {
+  display: flex;
+  flex-direction: column;
+  /* Убираем стандартные отступы и маркеры списка */
+margin: 0;
+padding: 0;
+list-style: none;
+  gap: 16px;
+}
+
+.mobile-menu__list a {
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--color-text);
+  text-decoration: none;
+}
+/* Оформление кнопки регистрации в мобильном меню */
+.mobile-menu__register {
+  font-size: 16px;
+line-height: 1.5;
+  background-color: var(--color-accent);
+  color: var(--color-text);
+  padding: 8px 20px;
+  border-radius: var(--radius);
+  text-decoration: none;
+}
+/* Скрываем мобильное меню на планшетах и компьютерах */
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+.mobile-menu__nav {
+  /* Размещаем навигацию по центру экрана */
+  display: flex;
+  justify-content: center;
+ flex: 1;
+align-items: center;
+}
+
+
