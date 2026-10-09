@@ -48,3 +48,22 @@
   padding-left: 32px;
   padding-right: 32px;
 }
+
+/* Планшетная версия футера */
+@media screen and (min-width: 768px) {
+  /* Горизонтальное расположение ссылок */
+  .footer__list {
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
+  }
+}
+
+/* Десктопная версия футера */
+@media screen and (min-width: 1440px) {
+  /* Цвет фона футера на больших экранах */
+  .footer {
+    background-color: #ffb780;
+  }
+}
+
