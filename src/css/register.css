@@ -1,9 +1,9 @@
-.register-section {
+.register {
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
-.register-container {
+.register__container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,13 +13,13 @@
   gap: 32px;
 }
 
-.register-content {
+.register__content {
   width: 100%;
   max-width: 335px;
 }
 
 /* Заголовок секції */
-.register-title {
+.register__title {
   font-family: 'Caveat', cursive, sans-serif;
   font-size: 48px;
   font-weight: 700;
@@ -30,14 +30,14 @@
 }
 
 /* Форма */
-.register-form {
+.register__form {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
-.field-wrapper {
+.register__field {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -45,15 +45,15 @@
 }
 
 /* Назви полів */
-.form-label {
+.register__label {
   font-size: 14px;
   font-weight: 500;
   color: #000000;
 }
 
 /* Інпути та текстове поле */
-.form-input,
-.form-textarea {
+.register__input,
+.register__textarea {
   width: 100%;
   box-sizing: border-box;
   padding: 8px 12px;
@@ -68,38 +68,38 @@
     box-shadow 0.25s ease;
 }
 
-.form-input {
+.register__input {
   height: 40px;
 }
 
-.form-textarea {
+.register__textarea {
   height: 180px;
   padding: 12px;
   resize: none;
 }
 
 /* Плейсхолдери */
-.form-input::placeholder,
-.form-textarea::placeholder {
+.register__input::placeholder,
+.register__textarea::placeholder {
   border-color: var(--color-carissma, #000000);
 }
 
 /* фокус */
-.form-input:focus,
-.form-textarea:focus {
+.register__input:focus,
+.register__textarea:focus {
   border-color: var(--color-carissma, #000000);
 }
 
 /* Кнопка Register */
-.register-btn {
+.register__btn {
   width: 100%;
   max-width: 340px;
   height: 44px;
   padding: 10px 24px;
   border-radius: 100px;
-  background-color: var(--color-carissma, #e87a5d);
-  border: 1px solid var(--color-carissma, #e87a5d);
-  color: #ffffff;
+  background-color: #ffb780;
+  border: 1px solid #ffb780;
+  color: #000000;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
@@ -112,13 +112,13 @@
     background-color 0.25s ease;
 }
 
-.register-btn:hover,
-.register-btn:focus {
+.register__btn:hover,
+.register__btn:focus {
   opacity: 0.88;
 }
 
 /* Картинка */
-.register-thumb {
+.register__thumb {
   width: 100%;
   max-width: 335px;
   height: 286px;
@@ -126,7 +126,7 @@
   overflow: hidden;
 }
 
-.register-img {
+.register__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -135,12 +135,12 @@
 }
 
 @media screen and (min-width: 768px) {
-  .register-section {
+  .register {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 
-  .register-container {
+  .register__container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -150,12 +150,12 @@
     gap: 48px;
   }
 
-  .register-content {
+  .register__content {
     width: 100%;
     max-width: 704px;
   }
 
-  .register-thumb {
+  .register__thumb {
     width: 100%;
     max-width: 704px;
     height: 362px;
@@ -163,11 +163,11 @@
     overflow: hidden;
   }
 
-  .register-btn {
+  .register__btn {
     width: 340px;
   }
 
-  .register-img {
+  .register__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -177,12 +177,12 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .register-section {
+  .register {
     padding-top: 112px;
     padding-bottom: 112px;
   }
 
-  .register-container {
+  .register__container {
     max-width: 1312px;
     flex-direction: row;
     justify-content: space-between;
@@ -190,13 +190,13 @@
     gap: 32px;
   }
 
-  .register-content {
+  .register__content {
     width: 640px;
     max-width: 640px;
     flex-shrink: 0;
   }
 
-  .register-thumb {
+  .register__thumb {
     width: 640px;
     max-width: 640px;
     height: 734px;
@@ -206,11 +206,11 @@
     line-height: 0;
   }
 
-  .register-btn {
+  .register__btn {
     width: 304px;
   }
 
-  .register-img {
+  .register__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
