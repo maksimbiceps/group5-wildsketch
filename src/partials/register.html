@@ -1,63 +1,65 @@
-<section class="register-section" id="register">
-  <div class="container register-container">
+<section class="section register" id="register">
+  <div class="container register__container">
     <!-- Форма -->
-    <div class="register-content">
-      <h2 class="register-title">Register</h2>
+    <div class="register__content">
+      <h2 class="register-title register__title">Register</h2>
 
-      <form class="register-form" autocomplete="off">
-        <div class="field-wrapper">
-          <label for="user-name" class="form-label">Name*</label>
+      <form class="register__form" autocomplete="off">
+        <div class="register__field">
+          <label for="user-name" class="register__label">Name*</label>
           <input
             type="text"
             name="user-name"
             id="user-name"
-            class="form-input"
+            class="register__input"
             placeholder="Emma"
             required
-            pattern="^[a-zA-Z\s\.]{5,64}$"
+            pattern="^[a-zA-Z\s\.]{2,64}$"
           />
         </div>
 
-        <div class="field-wrapper">
-          <label for="user-email" class="form-label">Email*</label>
+        <div class="register__field">
+          <label for="user-email" class="register__label">Email*</label>
           <input
             type="email"
             name="user-email"
             id="user-email"
-            class="form-input"
+            class="register__input"
             placeholder="hello@wildsketch.com"
             required
             pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
           />
         </div>
 
-        <div class="field-wrapper">
-          <label for="user-message" class="form-label"
+        <div class="register__field">
+          <label for="user-message" class="register__label"
             >Describe your skills</label
           >
           <textarea
             name="user-message"
             id="user-message"
-            class="form-textarea"
+            class="register__textarea"
             placeholder="Type your skills..."
             maxlength="500"
           ></textarea>
         </div>
 
-        <button type="submit" class="register-btn">Register</button>
+        <button type="submit" class="register__btn">Register</button>
       </form>
     </div>
 
     <!-- Картинка -->
-    <div class="register-thumb">
+    <div class="register__thumb">
       <img
         src="./img/register/register-1@1x.jpg"
         srcset="
           ./img/register/register-1@1x.jpg 1x,
           ./img/register/register-1@2x.jpg 2x
         "
-        alt="Дівчина малює на мольберті"
-        class="register-img"
+        width="335"
+        height="286"
+        alt="Girl painting on an easel"
+        class="register__img"
       />
     </div>
   </div>
