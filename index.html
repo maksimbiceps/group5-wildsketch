@@ -22,7 +22,7 @@
       rel="stylesheet"
     />
     <!-- Styles CSS -->
-    <link rel="stylesheet" crossorigin href="/group5-wildsketch/assets/index-BBsRqBwm.css">
+    <link rel="stylesheet" crossorigin href="/group5-wildsketch/assets/index-zpgCRCNA.css">
   </head>
   <body>
     <header class="header">
@@ -568,7 +568,68 @@
   </div>
 </section>
 
-      
+      <section class="register-section" id="register">
+  <div class="container register-container">
+    <!-- Форма -->
+    <div class="register-content">
+      <h2 class="register-title">Register</h2>
+
+      <form class="register-form" autocomplete="off">
+        <div class="field-wrapper">
+          <label for="user-name" class="form-label">Name*</label>
+          <input
+            type="text"
+            name="user-name"
+            id="user-name"
+            class="form-input"
+            placeholder="Emma"
+            required
+            pattern="^[a-zA-Z\s\.]{5,64}$"
+          />
+        </div>
+
+        <div class="field-wrapper">
+          <label for="user-email" class="form-label">Email*</label>
+          <input
+            type="email"
+            name="user-email"
+            id="user-email"
+            class="form-input"
+            placeholder="hello@wildsketch.com"
+            required
+            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+          />
+        </div>
+
+        <div class="field-wrapper">
+          <label for="user-message" class="form-label"
+            >Describe your skills</label
+          >
+          <textarea
+            name="user-message"
+            id="user-message"
+            class="form-textarea"
+            placeholder="Type your skills..."
+            maxlength="500"
+          ></textarea>
+        </div>
+
+        <button type="submit" class="register-btn">Register</button>
+      </form>
+    </div>
+
+    <!-- Картинка -->
+    <div class="register-thumb">
+      <img
+        src="/group5-wildsketch/assets/register-1@1x-Dfc-YIpq.jpg"
+        srcset="/group5-wildsketch/assets/register-1@1x-Dfc-YIpq.jpg 1x, /group5-wildsketch/assets/register-1@2x-CSw4Yuev.jpg 2x"
+        alt="Дівчина малює на мольберті"
+        class="register-img"
+      />
+    </div>
+  </div>
+</section>
+
     </main>
 
     <!-- Подвал сайта WildSketch -->
