@@ -74,6 +74,12 @@
   }
 }
 
+.mobile-menu__container {
+  width: 100%;
+  max-width: 335px;
+  margin-inline: auto;
+}
+
 .mobile-menu__nav {
   /* Center navigation on the screen */
   text-align: center;
